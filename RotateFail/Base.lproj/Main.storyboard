@@ -23,7 +23,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2o6-AB-CQG">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2o6-AB-CQG">
                                 <rect key="frame" x="63" y="69" width="194" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Modal View Controller">
@@ -43,6 +43,9 @@
                             <constraint firstAttribute="trailing" secondItem="Hxa-tF-wkN" secondAttribute="trailing" constant="20" id="wJi-SC-DhM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="modalButton" destination="2o6-AB-CQG" id="pfz-pl-vSu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +70,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-u0-C51">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-u0-C51">
                                 <rect key="frame" x="51" y="69" width="218" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -88,6 +91,9 @@
                             <constraint firstItem="G4h-Gd-jZb" firstAttribute="top" secondItem="0d0-iD-FJX" secondAttribute="top" constant="20" symbolic="YES" id="pKC-0k-sNb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="ubz-u0-C51" id="T9Y-kr-Jip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70f-3q-DeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
