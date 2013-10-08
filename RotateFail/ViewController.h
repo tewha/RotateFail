@@ -2,4 +2,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)unwindFromModalViewController:(UIStoryboardSegue *)unwindSegue;
+
 @end
